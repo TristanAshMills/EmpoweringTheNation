@@ -3,6 +3,14 @@
     padding: 0;
     font-family: sans-serif;
 }
+.title h1{
+    color: #fff;
+    text-align: center;
+    display: flex;
+    cursor: pointer;
+    font-size: 50px;
+    justify-content: left;
+}
 .banner{
     width: 100%;
     height: 100vh;
@@ -136,7 +144,6 @@ footer {
     font-size: 15px;
     flex-direction: column;
     text-align: left;
-
 }
 .popup button{
     width: 100%;

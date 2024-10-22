@@ -1,88 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles2.css"
+    <link rel="stylesheet" href="styles2.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empowering The Nation</title>
 </head>
 <body>
     <div class="banner">
-            <div class="navbar">
-                <img src="_images/Foundation-photoaidcom-cropped.png" width="150" height="150" class="Logo">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="course_details.html">Courses</a></li>
-                    <li><a href="apply.html">Apply Now</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
+        <div class="navbar">
+            <img src="_images/Foundation-photoaidcom-cropped.png" width="150" height="150" class="Logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="course_details.html">Courses</a></li>
+                <li><a href="apply.html">Apply Now</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+        
+        <div class="title">
+            <h1>Available Courses</h1>
+        </div>
+
+        <div class="content">
+
+            <button type="button" class="btn" onclick="openPopup('popup-sewing')"><span></span>Sewing</button>
+            <div class="popup" id="popup-sewing">
+                <h2>Sewing</h2>
+                <h3>Price → R1500</h3><br>
+                <h4>Content:</h4>
+                <p>
+                    〫Types of stitches.<br>
+                    〫Threading a sewing machine.<br>
+                    〫Sewing buttons, zips, hems and seams.<br>
+                    〫Alterations.<br>
+                    〫Designing and sewing new garments.
+                </p>
+                <button type="button" onclick="closePopup('popup-sewing')">Close</button>
             </div>
 
-            <div class="content">
-                <h1>Availble Courses</h1>
-                <button type="button" class="btn" onclick="openPopup('popup-sewing')"><span></span>Sewing</button>
-                <div class="popup" id="popup-sewing">
-                    <h2>Sewing</h2>
-                    <h3>Price → R1500</h3><br>
-                    <h4>Content:</h4>
-                    <p> 〫Types of stitches.<br>
-                        〫Threading a sewing machine.<br>
-                        〫Sewing buttons, zips, hems and seams.<br>
-                        〫Alterations.<br>
-                        〫designing and sewing new garments.
-                    </p>
-                    <button type="button" onclick="closePopup('popup-sewing')">Close</button>
-                </div>
-    
-                
-                <button type="button" class="btn" onclick="openPopup('popup-first-aid')"><span></span>First Aid</button>
-                <div class="popup" id="popup-first-aid">
-                    <h5>First Aid</h5>
-                    <h6></h6>
-                    <h7></h7>
-                    <p>Gain knowledge of basic first aid techniques.</p>
-                    <button type="button" onclick="closePopup('popup-first-aid')">Close</button>
-                </div>
-    
-                
-                <button type="button" class="btn" onclick="openPopup('popup-cooking')"><span></span>Cooking</button>
-                <div class="popup" id="popup-cooking">
-                    <h8>Cooking</h8>
-                    <h9></h9>
-                    <h10></h10>
-                    <p>Master the art of cooking with our professional chefs.</p>
-                    <button type="button" onclick="closePopup('popup-cooking')">Close</button>
-                </div>
-    
-                
-                <button type="button" class="btn" onclick="openPopup('popup-skills')"><span></span>Skills</button>
-                <div class="popup" id="popup-skills">
-                    <h11>Skills</h11>
-                    <h12></h12>
-                    <h13></h13>
-                    <p>Develop key life skills to improve personal growth.</p>
-                    <button type="button" onclick="closePopup('popup-skills')">Close</button>
-                </div>
-    
-                
-                <button type="button" class="btn" onclick="openPopup('popup-child-minding')"><span></span>Child Minding</button>
-                <div class="popup" id="popup-child-minding">
-                    <h14>Child Minding</h14>
-                    <h15></h15>
-                    <h16></h16>
-                    <p>Learn how to take care of children with certified training.</p>
-                    <button type="button" onclick="closePopup('popup-child-minding')">Close</button>
-                </div>
+            <button type="button" class="btn" onclick="openPopup('popup-first-aid')"><span></span>First Aid</button>
+            <div class="popup" id="popup-first-aid">
+                <h5>First Aid</h5>
+                <p>Gain knowledge of basic first aid techniques.</p>
+                <button type="button" onclick="closePopup('popup-first-aid')">Close</button>
+            </div>
+
+            <button type="button" class="btn" onclick="openPopup('popup-cooking')"><span></span>Cooking</button>
+            <div class="popup" id="popup-cooking">
+                <h8>Cooking</h8>
+                <p>Master the art of cooking with our professional chefs.</p>
+                <button type="button" onclick="closePopup('popup-cooking')">Close</button>
+            </div>
+
+            <button type="button" class="btn" onclick="openPopup('popup-skills')"><span></span>Skills</button>
+            <div class="popup" id="popup-skills">
+                <h11>Skills</h11>
+                <p>Develop key life skills to improve personal growth.</p>
+                <button type="button" onclick="closePopup('popup-skills')">Close</button>
+            </div>
+
+            <button type="button" class="btn" onclick="openPopup('popup-child-minding')"><span></span>Child Minding</button>
+            <div class="popup" id="popup-child-minding">
+                <h14>Child Minding</h14>
+                <p>Learn how to take care of children with certified training.</p>
+                <button type="button" onclick="closePopup('popup-child-minding')">Close</button>
+            </div>
         </div>
     </div>
+
     <script>
+        function closeAllPopups() {
+
+            var popups = document.querySelectorAll('.popup');
+            popups.forEach(function(popup) {
+                popup.classList.remove('open-popup');
+            });
+        }
+
         function openPopup(popupId) {
+            closeAllPopups(); 
             document.getElementById(popupId).classList.add("open-popup");
         }
 
         function closePopup(popupId) {
             document.getElementById(popupId).classList.remove("open-popup");
         }
-    </script>  
+    </script>
 </body>
 </html>
