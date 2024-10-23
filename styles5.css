@@ -7,28 +7,26 @@ body {
     background-image: url('_images/pexels-oleksandr-tiupa-53788-192136.jpg');
     background-size: cover;
 }
-
-.login-container {
+.signup-container {
     background-color: #1e1e1e;
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     width: 300px;
+    
 }
-
 h2 {
     text-align: center;
     margin-bottom: 1.5rem;
     color: #f5f5f5;
 }
-
 label {
     font-size: 0.9rem;
     color: #b0b0b0;
     display: block;
     margin-bottom: 0.5rem;
 }
-
+input[type="text"],
 input[type="email"],
 input[type="password"] {
     width: 90%;
@@ -39,7 +37,6 @@ input[type="password"] {
     background-color: #2c2c2c;
     color: #f5f5f5;
 }
-
 input[type="submit"] {
     width: 100%;
     padding: 0.8rem;
@@ -51,19 +48,16 @@ input[type="submit"] {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
 input[type="submit"]:hover {
     background-color: #3700b3;
 }
-
-.login-container a {
+.signup-container a {
     display: block;
     text-align: center;
     color: #bb86fc;
     margin-top: 1rem;
     text-decoration: none;
 }
-
-.login-container a:hover {
+.signup-container a:hover {
     text-decoration: underline;
 }
