@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/styles2.css">
+   
+    <script src="../JS/navbar.js"></script>
+    <script src="../JS/coursesBackground.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering The Nation</title>
+</head>
+<body>
+    <div class="banner" id="bgChange">
+        <nav-component></nav-component>
+
+            <div class="title">
+                <h1>Available Courses</h1>
+            </div>
+
+            <div class="content">
+
+                <button type="button" class="btn" onclick="openPopup('popup-first-aid')"><span></span>First Aid</button>
+                <div class="popup" id="popup-first-aid">
+                    <h2>First Aid</h2>
+                    <h3>Price R1500</h3><br>
+                    <p>
+                        Purpose: To provide first aid awareness and basic life support
+                        Content:<br>
+                        • Wounds and bleeding<br>
+                        • Burns and fractures<br>
+                        • Emergency scene management<br>
+                        • Cardio-Pulmonary Resuscitation (CPR)<br>
+                        • Respiratory distress e.g., Choking, blocked airwa</p>
+                    <div class="popupBtn">
+                        <button class="applyBtn" type="button" onclick="redirectApply()">Apply</button>
+                        <button class="closeBtn" type="button" onclick="closePopup('popup-first-aid')">Close</button>
+                    </div>
+                </div>
+    
+                <button type="button" class="btn" onclick="openPopup('popup-sewing')"><span></span>Sewing</button>
+                <div class="popup" id="popup-sewing">
+                    <h2>Sewing</h2>
+                    <h3>Price R1500</h3><br>
+                    <h4>Content:</h4>
+                    <p>
+                        • Types of stitches.<br>
+                        • Threading a sewing machine.<br>
+                        • Sewing buttons, zips, hems and seams.<br>
+                        • Alterations.<br>
+                        • Designing and sewing new garments.
+                    </p>
+                    <div class="popupBtn">
+                        <button class="applyBtn" type="button" onclick="redirectApply()">Apply</button>
+                        <button class="closeBtn" type="button" onclick="closePopup('popup-sewing')">Close</button>
+                    </div>
+                </div>
+
+                <button type="button" class="btn" onclick="openPopup('popup-Landscaping')"><span></span>Landscaping</button>
+                <div class="popup" id="popup-Landscaping">
+                    <h2>Landscaping</h2>
+                    <h3>Price R1500</h3><br>
+                    <p>Purpose: To provide skills to navigate basic life necessities
+                        Content:<br>
+                        • Opening a bank account<br>
+                        • Basic labour law (know your rights)<br>
+                        • Basic reading and writing literacy <br>
+                        • Basic numeric literacy</p>
+                    <div class="popupBtn">
+                        <button class="applyBtn" type="button" onclick="redirectApply()">Apply</button>
+                        <button class="closeBtn" type="button" onclick="closePopup('popup-Landscaping')">Close</button>
+                    </div>
+                </div>
+    
+                <button type="button" class="btn" onclick="openPopup('popup-skills')"><span></span>Life Skills</button>
+                <div class="popup" id="popup-skills">
+                    <h2>Life Skills</h2>
+                    <h3>Price R1500</h3><br>
+                    <p>Purpose: To provide skills to navigate basic life necessities
+                        Content:<br>
+                        • Opening a bank account<br>
+                        • Basic labour law (know your rights)<br>
+                        • Basic reading and writing literacy <br>
+                        • Basic numeric literacy</p>
+                    <div class="popupBtn">
+                        <button class="applyBtn" type="button" onclick="redirectApply()">Apply</button>
+                        <button class="closeBtn" type="button" onclick="closePopup('popup-skills')">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script> 
+function redirectApply(){
+    window.location.href = "apply.html";
+    }
+</script>
+
+</html>

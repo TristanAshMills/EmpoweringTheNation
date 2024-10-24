@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../CSS/header.css">
+    <link rel="stylesheet" href="../CSS/styles2.css">
+   
+    <script src="../JS/navbar.js"></script>
+    <script src="../JS/coursesBackground.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empowering The Nation</title>
+</head>
+<body>
+    <div class="banner" id="bgChange">
+        <nav-component></nav-component>
+
+            <div class="title">
+                <h1>Available Courses</h1>
+            </div>
+
+            <div class="content">
+    
+                <button type="button" class="btn" onclick="openPopup('popup-child-minding')"><span></span>Child Minding</button>
+                <div class="popup" id="popup-child-minding">
+                    <h2>Child Minding</h2>
+                    <h3>Price → R1500</h3><br>
+                    <p>Purpose: To provide basic child and baby care 
+                        Content:<br>
+                        • birth to six-month old baby needs<br>
+                        • seven-month to one year old needs<br>
+                        • Toddler needs<br>
+                        • Educational toys
+                        </p>
+                    <div class="popupBtn">
+                        <button class="applyBtn" type="button" onclick="redirectApply()">Apply</button>
+                        <button class="closeBtn" type="button" onclick="closePopup('popup-child-minding')">Close</button>
+                    </div>
+                </div>
+
+                <button type="button" class="btn" onclick="openPopup('popup-cooking')"><span></span>Cooking</button>
+                <div class="popup" id="popup-cooking">
+                    <h2>Cooking</h2>
+                    <h3>Price → R750</h3><br>
+                    <p>
+                        Purpose: To prepare and cook nutritious family meals
+                        Content:<br>
+                        • Nutritional requirements for a healthy body<br>
+                        • Types of protein, carbohydrates and vegetables<br>
+                        • Planning meals<br>
+                        • Preparation and cooking of meals</p>
+                    <div class="popupBtn">
+                        <button class="applyBtn" type="button" onclick="redirectApply()">Apply</button>
+                        <button class="closeBtn" type="button" onclick="closePopup('popup-cooking')">Close</button>
+                    </div>
+                </div>
+                <button type="button" class="btn" onclick="openPopup('popup-garden')"><span></span>Garden Maintenance</button>
+                <div class="popup" id="popup-garden">
+                    <h2>Garden Maintenance</h2>
+                    <h3>Price → R750</h3><br>
+                    <p>
+                        Purpose: To prepare and cook nutritious family meals
+                        Content:<br>
+                        • Nutritional requirements for a healthy body<br>
+                        • Types of protein, carbohydrates and vegetables<br>
+                        • Planning meals<br>
+                        • Preparation and cooking of meals</p>
+                    <div class="popupBtn">
+                        <button class="applyBtn" type="button" onclick="redirectApply()">Apply</button>
+                        <button class="closeBtn" type="button" onclick="closePopup('popup-garden')">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <script>
+        function redirectApply(){
+            window.location.href = "apply.html";
+        }
+    </script>
+</body>
+</html>

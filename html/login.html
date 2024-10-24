@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="../CSS/styles4.css">
+    <script src="../JS/navbar.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
@@ -10,20 +11,24 @@
 </head>
 <body>
 
-<div class="login-container">
-    <h2>Login</h2>
-    <form id="loginForm">
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" required>
+    <div class="backCon">
+        <button class="backBtn" onclick="redirectHome()">Back</button>
+    </div>
 
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
 
-        <input type="submit" value="Login">
-    </form>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
 
-    <a href="register.html">Don't have an account? Sign up</a>
-</div>
+            <input type="submit" value="Login">
+        </form>
+
+        <a href="register.html">Don't have an account? Sign up</a>
+    </div>
 
 <script>
     document.getElementById('loginForm').addEventListener('submit', function(event) {
@@ -46,6 +51,9 @@
             alert("Invalid email or password. Please try again.");
         }
     });
+    function redirectHome(){
+        window.location.href = "index.html";
+    }
 </script>
 
 </body>

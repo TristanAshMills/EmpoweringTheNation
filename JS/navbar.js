@@ -8,12 +8,18 @@ class Navbar extends HTMLElement {
         this.innerHTML = `
             <div class="navbar">
                 <img src="../_images/Foundation-photoaidcom-cropped.png" width="150" height="150" class="Logo">
-                <ul class="navList">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="course_details.html">Courses</a></li>
-                    <li><a href="apply.html">Apply Now</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
+                <div class="navList">
+                    <a class="navLink" href="index.html">Home</a>
+                    <div class="dropdownCon">
+                        <a class="navLink" href="course_details.html">Courses</a>
+                        <div class="dropdownOpt">
+                            <a class="navLink" href="six_month_courses.html">Six Month</a>
+                            <a class="navLink" href="six_week_courses.html">Six Week</a>
+                        </div>
+                    </div>
+                    <a class="navLink" href="apply.html">Apply Now</a>
+                    <a class="navLink" href="contact.html">Contact Us</a>
+                </div>
             </div>
 
         `;
