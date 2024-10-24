@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url('_images/pexels-oleksandr-tiupa-53788-192136.jpg');
+    background-image: url('../_images/pexels-oleksandr-tiupa-53788-192136.jpg');
     background-size: cover;
 }
 .signup-container {
