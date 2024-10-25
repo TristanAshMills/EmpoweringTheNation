@@ -7,7 +7,7 @@ class Navbar extends HTMLElement {
 
         this.innerHTML = `
             <div class="navbar">
-                <img src="../_images/Foundation-photoaidcom-cropped.png" width="150" height="150" class="Logo">
+                <img src="../_images/Foundation.png" width="100" height="100" class="Logo">
                 <div class="navList">
                     <a class="navLink" href="index.html">Home</a>
                     <div class="dropdownCon">
