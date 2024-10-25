@@ -7,6 +7,7 @@ body {
     align-items: center;
     flex-direction: column;
     height: 100vh;
+    background-image: url('../_images/pexels-oleksandr-tiupa-53788-192136.jpg');
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../_images/pexels-oleksandr-tiupa-53788-192136.jpg);
     background-size: cover;
 }

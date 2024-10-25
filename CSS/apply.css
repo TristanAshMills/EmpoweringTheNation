@@ -1,0 +1,90 @@
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../_images/pexels-oleksandr-tiupa-53788-192136.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.container {
+    text-align: center;
+    margin-top: 100px;
+}
+.container.active{
+    display: none;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.course-selection {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.course-category {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+}
+
+.course-category h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.course-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.course-list li {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.course-list li .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.course-list li .btn:hover {
+    background-color: #ff5722;
+}
+
+.checkout {
+    margin-top: 30px;
+}
+
+.checkout .btn {
+    background-color: #ff5722;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.checkout .btn:hover {
+    background-color: #4CAF50;
+}

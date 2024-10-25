@@ -1,3 +1,6 @@
+let container = document.querySelector(".container");
+let secCon = document.querySelector(".secCon");
+
 const coursesData = [
     { id: 1, name: 'First Aid', price: 1500 },
     { id: 2, name: 'Sewing', price: 1500 },
@@ -12,6 +15,13 @@ let selectedList = [];
 function addCourseToList(id) {
     if (!selectedList.includes(id)) {
         selectedList.push(id);
+        console.log('add:' , selectedList);
+    }else{
+        const index = selectedList.indexOf(id);
+        if (index > -1) {
+            selectedList.splice(index, 1);
+            console.log('rmv:' , selectedList);
+        }
     }
 }
 
@@ -41,4 +51,4 @@ function calcTotal() {
     const finalTotal = discountedTotal + (discountedTotal * 0.15);
 
     return { total, discountAmount: total * discount, finalTotal };
-}
+};
