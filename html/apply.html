@@ -47,7 +47,7 @@
                 <ul class="course-list">
                     <li>
                         Child Minding <br> Price: R750
-                        <a href="#" class="btn" onclick="() => addCourseToList(5)">Add</a>
+                        <a href="#" class="btn" onclick="addCourseToList(5)">Add</a>
                     </li>
                     <li>
                         Cooking <br> Price: R750
@@ -63,7 +63,27 @@
         <div class="checkout">
             <a href="#" class="btn" onclick="calcTotal()">Check Total</a>
         </div>
-    </div>
 
+        <div class="course-selection">
+            <div class="course-category">
+                <h2>Total</h2>
+                <li>
+                    sub total: <span id="subTotal"></span>
+                </li>
+                <li>
+                    discount: <span id="discount"></span>
+                </li>
+                <li>
+                    vat (15%): <span id="vat"></span>
+                </li>
+                <li>
+                    final total: <span id="finalTotal"></span>
+                </li>
+            </div>
+        </div>
+    </div>
+<footer>
+    © 2024 Empowering the Nation. All Rights Reserved.
+</footer>
 </body>
 </html>
