@@ -4,51 +4,111 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="../CSS/header.css">
-    <link rel="stylesheet" type="text/css" href="../CSS/styles3.css" <meta="" charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../CSS/styles3.css">
     <link rel="icon" type="image/x-icon" href="../_images/favicon-32x32.png">
     <script src="../JS/navbar.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Empowing the Nation</title>
-    <style>
-    </style>
+    <title>Contact Us - Empowering the Nation</title>
 </head>
 
 <body>
 <div class="banner">
     <nav-component></nav-component>
-    
-        
+
     <div class="container">
         <div class="contact-box">
             <div class="left">
-            <h2>Our Address</h2>
-
-            <p>The Quadrant,<br> 146 Campground Rd,<br> Newlands,<br> Cape Town,<br> 7708</p><br>
+                <h2>Our Address</h2>
+                <p>The Quadrant,<br> 146 Campground Rd,<br> Newlands,<br> Cape Town,<br> 7708</p><br>
 
                 <h2>Email Us</h2>
-
-                <p>If you prefer, you can also reach us via email at: <a href="info@EmpowingTheNation.co.za">info@EmpowingTheNation.co.za</a></p>
-                
+                <p>If you prefer, you can also reach us via email at: <a href="mailto:info@EmpoweringTheNation.co.za">info@EmpoweringTheNation.co.za</a></p>
             </div>
 
             <div class="right">
-                <form action="">
-                    <h2>Contact Us</h2>
-                    <input type="text" class="field" placeholder="Your Name">
-                    <input type="text" class="field" placeholder="Your Email">
-                    <input type="text" class="field" placeholder="Phone">
-                    <textarea placeholder="Message" class="field"></textarea>
-                    <button type="submit" class="btn">Send</button>
-                </form>
+                <form id="contactForm" action="https://formspree.io/f/xeoqownq" method="POST">
+                    <h1>Contact Me</h1>
+              
+                    <!--Name-->
+                      <label class="label" for="name"></label>
+                      <input
+                        class="field"
+                        type="text"
+                        name="name"
+                        id="name"
+                        placeholder="Enter Username"
+                        required
+                      />
+
+              
+                    <!--Email-->
+                      <label class="label" for="email"></label>
+                      <input
+                        class="field"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Insert Email"
+                        required
+                      />
+   
+                    <!--Phone Number-->
+
+                      <label class="label" for="number"></label>
+                      <input
+                        class="field"
+                        type="tel"
+                        name="phone"
+                        id="phone"
+                        placeholder="Enter Phone Number"
+                        required
+                      />
+
+              
+                    <!--Message-->
+
+                      <label class="label"></label>
+                      <textarea
+                        class="field"
+                        name="message"
+                        placeholder="Type Mesage Here"
+                      ></textarea>
+
+              
+                    <!-- your other form fields go here -->
+                    <button class="btn" type="submit">Send</button>
+                  </form>
             </div>
         </div>
     </div>
 </div>
 
 <footer class="footer">
-    <p>&copy; 2024  All rights reserved.</p>
+    <p>&copy; 2024 All rights reserved.</p>
 </footer>
+
+<script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        
+
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const phone = document.getElementById('phone').value.trim();
+        const message = document.getElementById('message').value.trim();
+        
+
+        if (!name || !email || !phone || !message) {
+            document.getElementById('error-message').style.display = 'block';
+        } else {
+            document.getElementById('error-message').style.display = 'none';
+            alert("Form submitted successfully!");
+            
+            // Clear all fields
+            document.getElementById('contactForm').reset();
+        }
+    });
+</script>
 </body>
 
 </html>
-<!-- ChatGPT (2024). ChatGPT . [online] ChatGPT. Available at: https://chatgpt.com/. -->
