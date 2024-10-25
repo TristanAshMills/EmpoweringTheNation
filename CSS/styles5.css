@@ -1,14 +1,40 @@
 body {
     margin: 0;
+    overflow: hidden;
+    padding-top: 2%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    flex-direction: column;
     height: 100vh;
-    background-image: url('../_images/pexels-oleksandr-tiupa-53788-192136.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(../_images/pexels-oleksandr-tiupa-53788-192136.jpg);
     background-size: cover;
 }
+
+.backCon{
+    width: 55%;
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 5%;
+}
+
+.backBtn{
+    background: #D14B4D;
+    width: 100px;
+    margin-top: 50px;
+    padding: 10px 0;
+    color: #fff;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
 .signup-container {
-    background-color: #1e1e1e;
+    background: linear-gradient(rgba(230, 230, 230, 0.192),rgba(230, 230, 230, 0.192));
+
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -42,19 +68,19 @@ input[type="submit"] {
     padding: 0.8rem;
     border: none;
     border-radius: 5px;
-    background-color: #6200ea;
-    color: #fff;
+    background-color: #89ea00;
+    color: #000;
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 input[type="submit"]:hover {
-    background-color: #3700b3;
+    background-color: #8cd600;
 }
 .signup-container a {
     display: block;
     text-align: center;
-    color: #bb86fc;
+    color: #8cd600;
     margin-top: 1rem;
     text-decoration: none;
 }

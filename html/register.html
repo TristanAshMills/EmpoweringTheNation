@@ -11,7 +11,10 @@
     </style>
 </head>
 <body>
-    <nav-component></nav-component>
+    <div class="backCon">
+        <button class="backBtn" onclick="redirectHome()">Back</button>
+    </div>
+
 
 <div class="signup-container">
     <h2>Create an Account</h2>
@@ -54,6 +57,10 @@
             alert("Passwords do not match. Please try again.");
         }
     });
+
+    function redirectHome(){
+        window.location.href = "index.html";
+    }
 
 </script>
 

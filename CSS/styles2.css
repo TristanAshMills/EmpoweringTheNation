@@ -10,58 +10,23 @@
     cursor: pointer;
     font-size: 50px;
     justify-content: left;
+    padding-left: 5%;
 }
 .banner{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../_images/pexels-oleksandr-tiupa-53788-192136.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(_images/pexels-oleksandr-tiupa-53788-192136.jpg);
     background-size: cover;
     background-position: center;
 }
-.navbar{
-    width: 85%;
-    margin: auto;
-    padding: 35px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.logo{
-    width: 120px;
-    cursor: pointer;
-}
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-    position: relative;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-}
-.navbar ul li::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background: #38761d;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
-}
-.navbar ul li:hover:after{
-    width: 100%;
-}
 .content{
     width: 100%;
-    top: 50%;
+    top: 53%;
     transform: translateY(-50%);
     color: #fff;
     position: fixed;
     bottom: 2;
-    right: 80%;
+    right: 74%;
     width: 300px;
 }
 .content h1{
@@ -102,9 +67,6 @@ span{
 button:hover span{
     width: 100%;
 }
-button:hover{
-    border: none;
-}
 footer {
     text-align: left;
     margin-top: 3px;
@@ -112,20 +74,20 @@ footer {
 }
 .popup {
     width: 400px;
-    background: #fff;
+    background: linear-gradient(rgba(230, 230, 230, 0.192),rgba(230, 230, 230, 0.192));
     border-radius: 15px;
     position: absolute;
     top: 1%;
     left: 300%;
     transform: translate(-50% -50%);
     padding: 0 30px 30px;
-    color: #000000;
+    color: #fff;
     visibility: hidden;
     z-index: 1000;
 }
 .open-popup{
     visibility: visible;
-    top: 0.1%;
+    top: -40.9%;
     transform: translate(-50% -50%) scale(1);
 }
 .popup h2{
@@ -149,7 +111,6 @@ footer {
     width: 100%;
     margin-top: 50px;
     padding: 10px 0;
-    background: #6fd649;
     color: #fff;
     border: 0;
     outline: none;
@@ -157,4 +118,16 @@ footer {
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.closeBtn{
+    background: #D14B4D;
+}
+.applyBtn{
+    background: #6fd649;
+}
+
+.popupBtn{
+    display: flex;
+    flex-direction: row;
 }
