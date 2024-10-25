@@ -86,29 +86,6 @@
 <footer class="footer">
     <p>&copy; 2024 All rights reserved.</p>
 </footer>
-
-<script>
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-        event.preventDefault();
-        
-
-        const name = document.getElementById('name').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const phone = document.getElementById('phone').value.trim();
-        const message = document.getElementById('message').value.trim();
-        
-
-        if (!name || !email || !phone || !message) {
-            document.getElementById('error-message').style.display = 'block';
-        } else {
-            document.getElementById('error-message').style.display = 'none';
-            alert("Form submitted successfully!");
-            
-            // Clear all fields
-            document.getElementById('contactForm').reset();
-        }
-    });
-</script>
 </body>
 
 </html>
