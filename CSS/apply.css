@@ -15,9 +15,6 @@ body {
     text-align: center;
     margin-top: 100px;
 }
-.container.active{
-    display: none;
-}
 
 h1 {
     font-size: 36px;
@@ -69,6 +66,9 @@ h1 {
 }
 
 .course-list li .btn:hover {
+    background-color: #ff5722;
+}
+.course-list li .btn.active {
     background-color: #ff5722;
 }
 
