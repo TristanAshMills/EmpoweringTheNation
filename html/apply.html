@@ -5,8 +5,12 @@
     <meta charset="UTF-8">
     <script src="../JS/navbar.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="../_images/favicon-32x32.png">
     <title>Course Application</title>
     <style>
+        .btn {
+            cursor: pointer;
+        }
     </style>
 </head>
 <body>
@@ -23,15 +27,15 @@
                 <ul class="course-list">
                     <li>
                         First Aid <br> Price: R1500
-                        <a href="#" class="btn">Add</a>
+                        <a href="#" class="btn" onclick="toggleText(this)">Add</a>
                     </li>
                     <li>
                         Landscaping <br> Price: R1500
-                        <a href="#" class="btn">Add</a>
+                        <a href="#" class="btn" onclick="toggleText(this)">Add</a>
                     </li>
                     <li>
-                        sewing <br> Price: R1500
-                        <a href="#" class="btn">Add</a>
+                        Sewing <br> Price: R1500
+                        <a href="#" class="btn" onclick="toggleText(this)">Add</a>
                     </li>
                 </ul>
             </div>
@@ -41,15 +45,15 @@
                 <ul class="course-list">
                     <li>
                         Child Minding <br> Price: R1500
-                        <a href="#" class="btn">Add</a>
+                        <a href="#" class="btn" onclick="toggleText(this)">Add</a>
                     </li>
                     <li>
                         Cooking <br> Price: R750
-                        <a href="#" class="btn">Add</a>
+                        <a href="#" class="btn" onclick="toggleText(this)">Add</a>
                     </li>
                     <li>
                         Garden Maintenance <br> Price: R750
-                        <a href="#" class="btn">Add</a>
+                        <a href="#" class="btn" onclick="toggleText(this)">Add</a>
                     </li>
                 </ul>
             </div>
@@ -59,6 +63,16 @@
             <a href="#" class="btn">Checkout</a>
         </div>
     </div>
+
+    <script>
+        function toggleText(element) {
+            if (element.textContent.trim() === "Add") {
+                element.textContent = "Added";
+            } else {
+                element.textContent = "Add";
+            }
+        }
+    </script>
 
 </body>
 </html>

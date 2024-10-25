@@ -65,47 +65,45 @@ body {
 }
 .container {
     text-align: center;
-    margin-top: 100px;
+    margin-top: 15px; /* Increased margin */
 }
 h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 42px; /* Increased font size */
+    margin-bottom: 25px; /* Increased margin */
 }
 .course-selection {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 550px; /* Increased gap */
 }
 .course-category {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    width: 300px;
+    background-color: rgba(255, 255, 255, 0.15); /* Slightly more opaque */
+    padding: 30px; /* Increased padding */
+    border-radius: 15px; /* Increased border radius */
+    width: 350px; /* Increased width */
 }
 .course-category h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 28px; /* Increased font size */
+    margin-bottom: 20px; /* Increased margin */
 }
 .course-list {
     list-style-type: none;
     padding: 0;
 }
 .course-list li {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 8px;
-    display: flex;
+    background-color: rgba(255, 255, 255, 0.15); /* Slightly more opaque */
+    padding: 15px; /* Increased padding */
+    margin-bottom: 15px; /* Increased margin */
+    border-radius: 10px; /* Increased border radius */
     justify-content: space-between;
     align-items: center;
-    
 }
 .course-list li .btn {
     background-color: #4CAF50;
     color: white;
-    padding: 5px 10px;
+    padding: 8px 15px; /* Increased padding */
     border: none;
-    border-radius: 5px;
+    border-radius: 8px; /* Increased border radius */
     cursor: pointer;
     text-decoration: none;
 }
@@ -113,15 +111,15 @@ h1 {
     background-color: #ff5722;
 }
 .checkout {
-    margin-top: 30px;
+    margin-top: 40px; /* Increased margin */
 }
 .checkout .btn {
     background-color: #ff5722;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 15px 25px; /* Increased padding */
+    border-radius: 8px; /* Increased border radius */
     color: white;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 20px; /* Increased font size */
 }
 .checkout .btn:hover {
     background-color: #4CAF50;
