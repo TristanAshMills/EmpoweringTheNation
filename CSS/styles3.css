@@ -10,7 +10,7 @@ body {
     padding: 0;
     background-color: #e0f7fa;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.50),rgba(0,0,0,0.50)),url(../_images/pexels-oleksandr-tiupa-53788-192136.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../_images/pexels-oleksandr-tiupa-53788-192136.jpg);
     background-size: cover;
     background-position: center;
 }
