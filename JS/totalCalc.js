@@ -1,3 +1,9 @@
+let container = document.querySelector(".container");
+let secCon = document.querySelector(".secCon");
+
+
+
+
 const coursesData = [
     { id: 1, name: 'First Aid', price: 1500 },
     { id: 2, name: 'Sewing', price: 1500 },
@@ -9,9 +15,21 @@ const coursesData = [
 ];
 let selectedList = []; 
 
-function addCourseToList(id) {
+function addCourseToList(id, event) {
+
+    const button = event.target;
+
     if (!selectedList.includes(id)) {
         selectedList.push(id);
+        console.log('add:' , selectedList);
+        button.classList.toggle("active");
+    }else{
+        const index = selectedList.indexOf(id);
+        if (index > -1) {
+            selectedList.splice(index, 1);
+            console.log('rmv:' , selectedList);
+            button.classList.toggle("active");
+        }
     }
 }
 
@@ -40,5 +58,10 @@ function calcTotal() {
     const discountedTotal = total - (total * discount);
     const finalTotal = discountedTotal + (discountedTotal * 0.15);
 
+    document.getElementById("subTotal").innerHTML = "R" + total;
+    document.getElementById("discount").innerHTML = discount + "%";
+    document.getElementById("vat").innerHTML = 0.15 + "%";
+    document.getElementById("finalTotal").innerHTML = "R" + finalTotal;
+
     return { total, discountAmount: total * discount, finalTotal };
-}
+};

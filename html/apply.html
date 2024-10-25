@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+    <link rel="stylesheet" href="../CSS/header.css">
     <link rel="stylesheet" href="../CSS/apply.css">
     <meta charset="UTF-8">
     <script src="../JS/navbar.js"></script>
+    <script src="../JS/totalCalc.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="../_images/favicon-32x32.png">
     <title>Course Application</title>
     <style>
-        .btn {
-            cursor: pointer;
-        }
     </style>
 </head>
 <body>
@@ -27,15 +26,21 @@
                 <ul class="course-list">
                     <li>
                         First Aid <br> Price: R1500
-                        <a href="#" class="btn" onclick="toggleText(this)">Add</a>
+
+                        <a href="#" class="btn btnOne" onclick="addCourseToList(1, event)">Add</a>
                     </li>
                     <li>
                         Landscaping <br> Price: R1500
-                        <a href="#" class="btn" onclick="toggleText(this)">Add</a>
+                        <a href="#" class="btn btnTwo" onclick="addCourseToList(3, event)">Add</a>
                     </li>
                     <li>
                         Sewing <br> Price: R1500
-                        <a href="#" class="btn" onclick="toggleText(this)">Add</a>
+                        <a href="#" class="btn btnThr" onclick="addCourseToList(2, event)">Add</a>
+                    </li>
+                    <li>
+                        Life Skills <br> Price: R1500
+                        <a href="#" class="btn btnFour" onclick="addCourseToList(4, event)">Add</a>
+
                     </li>
                 </ul>
             </div>
@@ -44,35 +49,46 @@
                 <h2>Six Week Courses</h2>
                 <ul class="course-list">
                     <li>
-                        Child Minding <br> Price: R1500
-                        <a href="#" class="btn" onclick="toggleText(this)">Add</a>
+
+                        Child Minding <br> Price: R750
+                        <a href="#" class="btn btnFive" onclick="addCourseToList(5, event)">Add</a>
                     </li>
                     <li>
                         Cooking <br> Price: R750
-                        <a href="#" class="btn" onclick="toggleText(this)">Add</a>
+                        <a href="#" class="btn btnSix" onclick="addCourseToList(6, event)">Add</a>
                     </li>
                     <li>
                         Garden Maintenance <br> Price: R750
-                        <a href="#" class="btn" onclick="toggleText(this)">Add</a>
+                        <a href="#" class="btn btnSev" onclick="addCourseToList(7, event)">Add</a>
+
                     </li>
                 </ul>
             </div>
         </div>
 
+        <div class="course-selection" style="padding-top: 4px;">
+            <div class="course-category">
+                <h2>Total</h2>
+                <h3>
+                    sub total: <span id="subTotal"></span>
+                </h3>
+                <h3>
+                    discount: <span id="discount"></span>
+                </h3>
+                <h3>
+                    vat (15%): <span id="vat"></span>
+                </h3>
+                <h3>
+                    final total: <span id="finalTotal"></span>
+                </h3>
+            </div>
+        </div>
         <div class="checkout">
-            <a href="#" class="btn">Checkout</a>
+            <a href="#" class="btn" onclick="calcTotal()">Check Total</a>
         </div>
     </div>
-
-    <script>
-        function toggleText(element) {
-            if (element.textContent.trim() === "Add") {
-                element.textContent = "Added";
-            } else {
-                element.textContent = "Add";
-            }
-        }
-    </script>
-
+<footer>
+    © 2024 Empowering the Nation. All Rights Reserved.
+</footer>
 </body>
 </html>
