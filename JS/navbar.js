@@ -11,7 +11,7 @@ class Navbar extends HTMLElement {
                 <div class="navList">
                     <a class="navLink" href="index.html">Home</a>
                     <div class="dropdownCon">
-                        <a class="navLink" href="course_details.html">Courses</a>
+                        <a class="navLink" href="course_selection.html">Courses</a>
                         <div class="dropdownOpt">
                             <a class="navLink" href="six_month_courses.html">Six Month</a>
                             <a class="navLink" href="six_week_courses.html">Six Week</a>

@@ -88,3 +88,6 @@ h1 {
 .checkout .btn:hover {
     background-color: #4CAF50;
 }
+.btn {
+    cursor: pointer;
+}
