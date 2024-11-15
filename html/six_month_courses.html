@@ -6,16 +6,23 @@
    
     <script src="../JS/navbar.js"></script>
     <script src="../JS/coursesBackground.js"></script>
+    <meta name="description" content="Empowering the Nation was established in 2018 and offers courses in Johannesburg.
+    Hundreds of domestic workers and gardeners have been trained on both the six-month long
+    Learnerships and six-week Short Skills Training Programmes to empower themselves and 
+    can provide more marketable skills. ">
+    <meta name="keywords" content="Courses, Upskill, Training, six-month, six-week">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Empowering The Nation</title>
+    <link rel="icon" type="image/x-icon" href="../_images/favicon-32x32.png">
 </head>
 <body>
     <div class="banner" id="bgChange">
         <nav-component></nav-component>
 
-            <div class="title">
+            <div class="title" style="display: flex; justify-content: space-between;">
                 <h1>Available Courses</h1>
+                <button class="closeBtn" type="button" style="border: none;" onclick="redirectHome()">Back</button>
             </div>
 
             <div class="content">
@@ -92,9 +99,14 @@
         
     </div>
 </body>
+
 <script> 
-function redirectApply(){
-    window.location.href = "apply.html";
+    function redirectApply(){
+        window.location.href = "apply.html";
+        }
+
+    function redirectHome(){
+    window.location.href = "course_selection.html";
     }
 </script>
 
